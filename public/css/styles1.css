@@ -1,0 +1,10 @@
+html,body {
+    height: 100%;
+  }
+  
+body {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(133, 123, 123);
+  }

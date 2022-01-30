@@ -1,0 +1,38 @@
+html,body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(to right, rgb(229, 216, 72), rgb(173, 86, 184));
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.top {
+  margin-bottom: 5px;
+}
+
+.middle {
+  margin-bottom: 5px;
+}
+
+.buttom {
+  margin-bottom: 10px;
+}
