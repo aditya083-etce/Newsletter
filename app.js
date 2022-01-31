@@ -1,4 +1,4 @@
-//jshint esversion: 6
+//jshint esversion: 6 
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
@@ -33,11 +33,14 @@ app.post("/", function(req, res) {
 
     const jsondata = JSON.stringify(data);
 
-    const url = "https://us14.api.mailchimp.com/3.0/lists/619d317bc8";
+    const Api_key = "2479417264e906a8f240870f9376b7ed-us14";
+    const Audiance_ID = "619d317bc8";
+
+    const url = "https://us14.api.mailchimp.com/3.0/lists/"+Audiance_ID;
 
     const options = {
         method: 'POST',
-        auth: "dire:2479417264e906a8f240870f9376b7ed-us14"
+        auth: "dire:"+Api_key,
     };
 
     const request = https.request(url,options,function(response){
@@ -64,7 +67,3 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000,function() {
     console.log("server listening on port 3000");
 });
-
-
-// 2479417264e906a8f240870f9376b7ed-us14
-// Audiance ID : 619d317bc8
